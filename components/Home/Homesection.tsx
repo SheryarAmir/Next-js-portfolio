@@ -1,9 +1,12 @@
 import React from 'react'
+import Hero from './Hero/Hero'
+
 
 const Homesection = () => {
   return (
     <div>
-      home
+      <Hero/>
+      
     </div>
   )
 }

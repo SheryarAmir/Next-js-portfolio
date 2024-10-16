@@ -3,7 +3,7 @@ import Homesection from "@/components/Home/Homesection";
 
 export default function Home() {
   return (
-   <div className=" overflow-hidden">
+   <div className=" overflow-hidden ">
 
 <Homesection/>
    </div>
