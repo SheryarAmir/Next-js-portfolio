@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Sora } from "next/font/google";
 import "./globals.css";
 import ResponsiveNavbar from "@/components/Home/Navbar/ResponsiveNavbar";
+import Footer from "@/components/Home/Footer/Footer"
 
 // Load Sora font from Google Fonts this is how you can change the font of your website.
 const font= Sora({
@@ -25,6 +26,7 @@ export default function RootLayout({
       <body className={`${font.className} antialiased`}>
         <ResponsiveNavbar/>
         {children}
+        <Footer/>
       </body>
     </html>
   );
