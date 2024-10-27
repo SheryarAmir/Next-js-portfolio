@@ -9,8 +9,8 @@ const Project = () => {
     <div className=' pt-16 pb-16 bg-[#050709]'>
       <SectionHeading>MY PROJECT</SectionHeading>
       <div className='w-[80%] mt-20 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 items-center'>
-{projectData.map((project)=>{
-    return <div key={project.id} className='bg-blue-950 p-6 rounded-lg hover:scale-105 transition-all
+{projectData.map((project,i)=>{
+    return <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay={`${i*100}`}  key={project.id} className='bg-blue-950 p-6 rounded-lg hover:scale-105 transition-all
      duration-300  '> 
     <Link href={project.url}  target="_blank"/>
     <Image src={project.image} alt="project " width={300} height={200} className='w-full'/>
