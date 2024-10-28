@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Sora } from "next/font/google";
+import { JetBrains_Mono, Sora } from "next/font/google";
 import "./globals.css";
 import ResponsiveNavbar from "@/components/Home/Navbar/ResponsiveNavbar";
 import Footer from "@/components/Home/Footer/Footer";
@@ -7,9 +7,10 @@ import ScrollToTop from "@/components/Helper/ScrollToTop";
 import AnimatedCursor from "react-animated-cursor";
 
 // Load Sora font from Google Fonts this is how you can change the font of your website.
-const font = Sora({
+const font = JetBrains_Mono({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
+  variable:'--font jetbrainsMono'
 });
 
 export const metadata: Metadata = {
