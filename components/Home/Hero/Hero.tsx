@@ -41,7 +41,7 @@ const Hero = () => {
               
             </button>
   </div>
-  <div className="links space-x-5 md:ml-12 md:mt-12 mt-10 text-white">
+  <div data-aos="zoom-in" data-aos-delya="300" className="links space-x-5 md:ml-12 md:mt-12 mt-10 text-white">
 
   <Link
         href="https://github.com/SheryarAmir"
@@ -85,11 +85,11 @@ const Hero = () => {
         rel="noopener noreferrer"
         className="inline-block"
       >
-        <FaMedium size={26} className=" hover:text-black" />
+        <FaMedium size={26} className=" hover:text-black rounded-full" />
       </Link>
 
       <Link
-        href="https://github.com/code-with-zain-hunzai"
+        href="https://youtube.com"
         target="_blank"
         rel="noopener noreferrer"
         className="inline-block"
@@ -105,9 +105,25 @@ const Hero = () => {
           </div>
 
           {/* Image content */}
-          <div data-aos="zoom-in" data-aos-delya="400" className="mx-auto hidden lg:block rounded-[3rem] border-[3.5px] border-blue-950 overflow-x-hidden xl:mt-[20px] ">
+          {/* <div data-aos="zoom-in" data-aos-delya="400" className="mx-auto hidden lg:block rounded-[3rem] border-[3.5px] border-blue-950 overflow-x-hidden xl:mt-[20px] ">
             <Image src={BaseInfo.profilePic} alt={BaseInfo.name} width={500} height={500}/>
-          </div>
+          </div> */}
+
+<div data-aos="zoom-in" data-aos-delay="400" className="mx-auto hidden lg:block xl:mt-[20px]">
+  {/* Animated Border Wrapper */}
+  <div className="animated-border w-[480px] h-[480px] rounded-full overflow-hidden flex items-center justify-center">
+    <Image
+      src={BaseInfo.profilePic}
+      alt={BaseInfo.name}
+      width={480} // Slightly smaller than the wrapper for padding
+      height={480}
+      className=" rounded-full  " // To match the border radius
+    />
+  </div>
+</div>
+
+
+          
         </div>
       </div>
     </div>

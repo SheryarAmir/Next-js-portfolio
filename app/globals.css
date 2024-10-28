@@ -32,6 +32,23 @@ background: #44028f;
       }
 
 
+      .animated-border {
+        position: relative;
+        padding: 8px; /* Adjust for spacing */
+        background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff, #ff00ff, #00ffff, #ffff00); 
+        background-size: 300% 300%;
+        animation: borderAnimation 3s linear infinite; 
+        
+      }
+      
+      @keyframes borderAnimation {
+        0% {
+          background-position: 0% 50%;
+        }
+        100% {
+          background-position: 100% 50%;
+        }
+      }
       
 
 }

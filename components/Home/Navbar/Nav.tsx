@@ -43,6 +43,7 @@ return()=>{
         {/* logo */}
 
         <Image
+        
           src="/images/logo.png"
           alt="LOGO"
           width={170}
