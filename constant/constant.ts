@@ -28,7 +28,7 @@ export const navlinks = [
   },
   {
     id:6,
-    URL:"",
+    URL:"/Contact",
     lable:"Contact"
         },
 ];
