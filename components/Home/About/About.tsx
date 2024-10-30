@@ -9,6 +9,8 @@ const About = () => {
     <div className="pt-16 pb-16 bg-[#050709]">
       {/* section heading */}
       <SectionHeading>About Me</SectionHeading>
+   
+
       <div   className="w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mt-20">
         {/* text content */}
         <div data-aos="fade-left" data-aos-anchor-placement="top-center" className="lg:w-[90%]">

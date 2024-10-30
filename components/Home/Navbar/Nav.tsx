@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { HiBars3BottomRight } from "react-icons/hi2";
+import Contact from "../Contact/Contact";
 
 //define props type
 
@@ -35,6 +36,7 @@ return()=>{
 
     } ,[])
 
+  
 
   return (
     <div className=   {` fixed ${navBg ? "bg-[#240b39]" : "fixed " } h-[12vh] z-[10]  w-full 
@@ -66,7 +68,7 @@ return()=>{
           {/* BUTTONS */}
           <div className="flex items-center space-x-4">
 
-<button className=" md:px-10 md:py-3 px-8 py-3 text-blue-800 font-semibold sm:text-base text-sm bg-white hover:bg-green-500 hover:text-white transition-all duration-200 rounded-lg">Hire Me</button>
+<button  className=" md:px-10 md:py-3 px-8 py-3 text-blue-800 font-semibold sm:text-base text-sm bg-white hover:bg-green-500 hover:text-white transition-all duration-200 rounded-lg">Hire Me</button>
 
 {/* burger */}
 <HiBars3BottomRight onClick={openNav} className=" w-8 h-8 cursor-pointer text-white lg:hidden" ></HiBars3BottomRight>

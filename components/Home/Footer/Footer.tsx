@@ -21,6 +21,7 @@ const Footer = () => {
         
       </div>
       <p className= " text-white text-opacity-60 text-center mt-6  " > 2024 All right Reserved by WebDev Warriors</p>
+      
     </div>
   );
 };

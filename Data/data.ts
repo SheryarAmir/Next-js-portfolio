@@ -75,7 +75,7 @@ export const BaseInfo = {
     {
       id: 1,
       image: "/images/p1.png",
-      url: "https://agency-opal-eight.vercel.app/",
+      url: "https://github.com/SheryarAmir/Next-js-portfolio",
     },
     {
       id: 2,
