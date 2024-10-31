@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 // Define props type
@@ -9,11 +10,12 @@ type Props = {
     summary: string;
     date: string;
     image: string;
+    URL: string;
   };
 };
 
 const BlogCard = ({ blog }: Props) => {
-  const { date, image, summary, title } = blog;
+  const { date, image, summary, title, URL } = blog;
 
   return (
     <div className='bg-indigo-900 rounded-md overflow-hidden'>
@@ -34,8 +36,12 @@ const BlogCard = ({ blog }: Props) => {
 
         <div className='mt-4 mb-4 w-full h-[1.5px] bg-gray-400 opacity-45'></div>
         <div className='flex items-center justify-between'>
-            <h1 className='text-sm text-gray-100 font-bold'>{date}</h1>
-            <button className='text-base hover:text-rose-500 text-gray-200 underline font-bold'>Read More</button>
+          <h1 className='text-sm text-gray-100 font-bold'>{date}</h1>
+          <Link href={URL} passHref>
+            <button className='text-base hover:text-rose-500 text-gray-200 underline font-bold'>
+              Read More
+            </button>
+          </Link>
         </div>
       </div>
     </div>

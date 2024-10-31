@@ -215,33 +215,36 @@ export const BaseInfo = {
   export const blogs = [
     {
       id: 1,
-      title: "Top Web Development Trends to Watch in 2024",
+      title: "Understanding Compilers, Interpreters, Transpilers, and Polyfills in Modern Web Development",
       summary:
-        "Explore the key web development trends for 2024 and their impact on your business.",
-      date: "August 18, 2024",
+        " backbone of modern web development, enabling developers to write efficient, cross-browser-compatible code",
+      date: "Apr 11, 2024",
       image: "/images/b1.jpg",
+      URL:"https://medium.com/@dev.sheryaramir/understanding-compilers-interpreters-transpilers-and-polyfills-in-modern-web-development-2bf49567f80f"
     },
     {
       id: 2,
-      title: "Why Your Business Needs a Custom Web Application",
+      title: "Diving into Document Object Model (DOM) Manipulation with JavaScript",
       summary:
-        "Discover why custom web applications are crucial for driving business growth and efficiency.",
-      date: "August 10, 2024",
+        "The Document Object Model (DOM) plays a pivotal role in web development, enabling dynamic interaction and manipulation of HTML documents.",
+      date: "Jan 16, 2024",
       image: "/images/b2.jpg",
+      URL:"https://medium.com/@dev.sheryaramir/diving-into-document-object-model-dom-manipulation-with-javascript-4734e9d98173"
     },
     {
       id: 3,
-      title: "The Importance of Website Speed Optimization",
+      title: "HTTP vs HTTPS: A Simple Guide to Secure Browsing",
       summary:
         "Understand how website speed impacts user experience and learn essential optimization tips.",
-      date: "July 25, 2024",
+      date: "Jan 4, 2024",
       image: "/images/b3.jpg",
+      URL:"https://medium.com/@dev.sheryaramir/http-vs-https-a-simple-guide-to-secure-browsing-a5243ee7e445"
     },
   ];
   
   export const contactData = {
-    phone: "+88(012345 789)",
-    email: "example@gmail.com",
-    address: "Dhaka , Bangladesh",
+    phone: "+92(3144480335)",
+    email: "dev.sheryaramir@gmail.com",
+    address: "Gilgit Pakistan",
   };
   
