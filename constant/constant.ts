@@ -28,7 +28,7 @@ export const navlinks = [
   },
   {
     id:6,
-    URL:"/Contact",
+    URL:"#Contact.tsx",
     lable:"Contact"
         },
 ];

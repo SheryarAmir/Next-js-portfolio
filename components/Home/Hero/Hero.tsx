@@ -6,6 +6,7 @@ import { FaGithub, FaLinkedinIn, FaYoutube, FaInstagram } from "react-icons/fa";
 import Link from "next/link";
 import { FaUpwork } from "react-icons/fa6";
 
+
 const Hero = () => {
   return (
     <div className="w-full pt-[4vh] md:-pt-[12vh] h-screen bg-[#0f0715]  overflow-hidden relative ">
@@ -35,11 +36,18 @@ const Hero = () => {
 <div className="media  block md:flex" >
   <div className="button">
      {/* button download */}
-   <button  data-aos="zoom-in" data-aos-delya="300" className=" md-px-8 md:py-2.5 px-6 py-1.5 text-white font-semibold text-sm md:text-lg transition-all duration-200 rounded-lg mt-8 bg-blue-700 hover:bg-green-500 flex items-center space-x-2">
-              <span>Download CV</span>
-              <FaDownload />
-              
-            </button>
+
+     <a href="/images/cv.pdf" download>
+  <button
+    data-aos="zoom-in"
+    data-aos-delay="300"
+    className="md-px-8 md:py-2.5 px-6 py-1.5 text-white font-semibold text-sm md:text-lg transition-all duration-200 rounded-lg mt-8 bg-blue-700 hover:bg-green-500 flex items-center space-x-2"
+  >
+    <span>Download CV</span>
+    <FaDownload />
+  </button>
+</a>c
+
   </div>
   <div data-aos="zoom-in" data-aos-delya="300" className="links space-x-5 md:ml-12 md:mt-12 mt-10 text-white">
 

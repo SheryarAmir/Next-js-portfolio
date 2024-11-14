@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { HiBars3BottomRight } from "react-icons/hi2";
-import Contact from "../Contact/Contact";
+
 
 //define props type
 
