@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 const ContactForm = () => {
   const [successMessage, setSuccessMessage] = useState<string | null>(null);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
+  const [selectedService, setSelectedService] = useState<string>("");
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -40,6 +41,10 @@ const ContactForm = () => {
       console.error("An error occurred during form submission:", error);
     }
   }
+
+  const handleServiceChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    setSelectedService(event.target.value);
+  };
 
   return (
     <div className='bg-[#140c1c] rounded-lg sm:p-10'>
@@ -92,8 +97,15 @@ const ContactForm = () => {
 
         {/* Dropdown for services */}
         <div>
-          <select className='w-full mt-5 bg-black text-white px-4 py-3.5 rounded-md border border-gray-600 outline-none' required>
-            <option value="" disabled selected>Select a Service</option>
+          <select
+            value={selectedService}
+            onChange={handleServiceChange}
+            className='w-full mt-5 bg-black text-white px-4 py-3.5 rounded-md border border-gray-600 outline-none'
+            required
+          >
+            <option value="" disabled>
+              Select a Service
+            </option>
             <option value="Frontend development">Frontend Development</option>
             <option value="Backend development">Backend Development</option>
             <option value="Fullstack development">Fullstack Development</option>
