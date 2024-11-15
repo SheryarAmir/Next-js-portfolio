@@ -69,14 +69,14 @@ const Hero = () => {
         <FaLinkedinIn  size={26} className=" hover:text-blue-500" />
       </Link>
 
-      <Link
+      {/* <Link
         href="https://github.com/code-with-zain-hunzai"
         target="_blank"
         rel="noopener noreferrer"
         className="inline-block"
       >
         <FaInstagram size={26} className=" hover:text-red-500" />
-      </Link>
+      </Link> */}
 
       <Link
         href="https://www.upwork.com/freelancers/~0170466117f7fadddf"

@@ -2,14 +2,14 @@ export const BaseInfo = {
     name: "Sheryar Amir",
     position: "Full Stack Web Developer",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit porro numquam ad, vero consequuntur aperiam cumque voluptatum pariatur veniam? Qui facilis est ipsam odio cum!",
+      "I specialize in building dynamic, responsive websites and web applications that offer seamless user experiences. My focus is on crafting scalable, high-performance solutions that are both user-friendly and visually appealing, using the latest tools and best practices to ensure optimal results.",
     profilePic: "/images/hero.png",
   };
   
   export const aboutInfo = {
     title: "Crafting Web Application with Passion and Precision",
     description:
-      "At webdev warriors, we’re a dedicated team of designers and developers committed to delivering tailored web solutions. With a blend of creativity and technical expertise, we help businesses elevate their online presence and achieve their goals",
+      "I am a passionate designer and developer dedicated to crafting custom web solutions. By blending creativity with technical expertise, I help businesses enhance their online presence and achieve their goals.",
     client: "50+",
     experience: "3+",
     project: "200+",
