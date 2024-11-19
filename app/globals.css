@@ -2,57 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components{
+@layer components {
+  .nav__link {
+    @apply relative text-base font-medium w-fit block text-white after:block after:content-[''] after:absolute after:h-[3px] after:bg-green-500 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-right;
+  }
 
-    .nav__link {
-        @apply relative text-base font-medium w-fit block text-white after:block after:content-[''] after:absolute after:h-[3px] after:bg-green-500 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-right;
-      }
-      
+  .text-bg {
+    background-image: linear-gradient(to right, #8750f7 0%, #ffff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
-      .text-bg{
-        background-image: linear-gradient(to right, #8750f7 0% , #ffff 100% );
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #44028f;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgb(34 197 94);
+    border-radius: 4px;
+  }
 
-      .custom-scrollbar::-webkit-scrollbar{
-        width: 10px;
-        height: 10px;
+  .animated-border {
+    position: relative;
+    padding: 8px; /* Adjust for spacing */
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #00ff00,
+      #0000ff,
+      #ff00ff,
+      #00ffff,
+      #ffff00
+    );
+    background-size: 300% 300%;
+    animation: borderAnimation 3s linear infinite;
+  }
 
-      }
-      .custom-scrollbar::-webkit-scrollbar-track{
-background: #44028f;
-
-      }
-      .custom-scrollbar::-webkit-scrollbar-thumb{
-        background:rgb(34 197 94);
-        border-radius: 4px;
-        
-      }
-
-
-      .animated-border {
-        position: relative;
-        padding: 8px; /* Adjust for spacing */
-        background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff, #ff00ff, #00ffff, #ffff00); 
-        background-size: 300% 300%;
-        animation: borderAnimation 3s linear infinite; 
-        
-      }
-      
-      @keyframes borderAnimation {
-        0% {
-          background-position: 0% 50%;
-        }
-        100% {
-          background-position: 100% 50%;
-        }
-
-        
-      }
-      
-
-      
-
+  @keyframes borderAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
 }
